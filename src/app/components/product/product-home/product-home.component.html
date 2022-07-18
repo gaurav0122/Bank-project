@@ -1,0 +1,18 @@
+<div class="alert alert-primary" role="alert" *ngIf="errorMsg">
+    {{errorMsg}}
+</div>
+
+<div class="row">
+    <div class="col-sm-12" *ngFor="let p of products">
+        <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">{{p.title}}</h3>
+              <h4 class="card-subtitle mb-2 text-muted">Price : {{p.price}}</h4>
+              <p class="card-text">{{p.shortDescription}}</p>
+              <a href="javascript.void(0)"  class="card-link">view full details</a>
+              <a href="javascript.void(0)" routerLink="/review/{{p.id}}" class="card-link">Reviews and Rating({{p.reviewCount}})</a>
+              <a href="javascript.void(0)" routerLink="/product/{{cid}}" class="card-link" (click)="addToCart(p)">AddToCart </a>
+            </div>
+          </div>
+    </div>
+</div>
