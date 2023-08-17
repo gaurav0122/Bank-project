@@ -35,13 +35,13 @@ jobs:
       - name: Install Dependencies
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: |
-          npm ci
-      - name: Add angular fire
-        run: |
-           npm i @angular/fire
-      - name: Add ghpages dependency
-        run: |
-          npm i angular-cli-ghpages
+          npm i
+      # - name: Add angular fire
+      #   run: |
+      #      npm i @angular/fire
+      # - name: Add ghpages dependency
+      #   run: |
+      #     npm i angular-cli-ghpages
       - name: Build
         run: |
           npm run build 
