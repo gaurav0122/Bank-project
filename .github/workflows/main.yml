@@ -39,6 +39,9 @@ jobs:
       - name: Build
         run: |
           npm run build 
+      - name: Add ghpages dependency
+        run: |
+          ng add angular-cli-ghpages
       
       - name: Conventional Changelog Action
         id: changelog
@@ -59,4 +62,4 @@ jobs:
 
       - name: Deploy
         run: |
-          npm run deploy
+          ng deploy --base-href=/Bank-project-training-angular/
