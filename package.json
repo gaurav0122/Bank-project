@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng deploy --base-href=/Bank-project-training-angular/"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +22,6 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
-    "angular-cli-ghpages": "^1.0.6",
     "bootstrap": "^5.1.3",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
